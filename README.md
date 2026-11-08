@@ -52,3 +52,13 @@ API key tidak diperlukan oleh browser maupun situs yang diterbitkan. `scripts/im
 `node --test tests/*.test.mjs` — 20 pemeriksaan aturan game, kapasitas, jarak/kecepatan, reward, kolaborasi/pengkhianatan, kandang/patroli, gerak hewan, arah FPS, struktur GLB/material/animasi dan kelengkapan aset, pergantian variasi klakson dan penghentian semua loop saat mute.
 
 Preview cloud mengalami relay timeout pada sesi pengembangan; gameplay FPS dan audio spasial dalam browser belum terverifikasi. Semua 61 MP3 berhasil didekode dan diverifikasi tidak senyap dengan FFmpeg. Render aset di Blender membantu pemeriksaan bentuk model, bukan pengganti uji browser.
+
+## Peningkatan karakter dan pencahayaan
+
+Karakter manusia memakai pivot lutut, jarak kaki lebih sempit, langkah ke depan/belakang dan ayunan tangan berlawanan. Pemain multiplayer berputar mengikuti perpindahan dan kembali ke pose diam ketika berhenti. Builder khusus manusia: `node scripts/build-models.mjs --humans-only`.
+
+Lampu jalan kini tersebar di jalan kota. Lampu jalan, pintu gedung, mobil dan truk memakai spotlight dengan peluruhan kuadrat, arah sorot dan warna yang sesuai. Material lensa dan jendela menyala saat sore/malam. Untuk membatasi biaya GPU, hanya 12 sumber terdekat mendapat slot cahaya aktif, termasuk dua dengan bayangan lokal. Jendela memakai emisi dan cahaya pintu sebagai representasi penerangan gedung; belum ada simulasi interior pada setiap jendela. Model motor belum tersedia dalam paket ini.
+
+Material mendapat detail normal/roughness untuk keluarga beton, batu, kayu, kain, aspal dan atap. Lingkungan pantulan PMREM mengikuti fase WIB. Ini peningkatan PBR atas model prosedural yang tersedia, belum fotorealisme penuh atau pantulan dinamis ray tracing.
+
+Panduan penggunaan ulang lintas proyek: [proses karakter dan environment](docs/threejs-realistic-environment.md). Tambahan tes mencakup artikulasi lutut, pose diam, arah/gerakan sorot lampu, pergantian siang–malam dan batas jumlah lampu. Uji render terisolasi di Chromium berhasil; performa gameplay kota penuh tetap perlu diuji pada GPU perangkat sasaran.

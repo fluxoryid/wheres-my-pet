@@ -5,7 +5,7 @@
     {
       "name": "human-male",
       "file": "human-male.glb",
-      "bytes": 55048,
+      "bytes": 59584,
       "description": "Civilian, articulated limbs and natural human proportions.",
       "animations": [
         "Walk"
@@ -14,7 +14,7 @@
     {
       "name": "human-female",
       "file": "human-female.glb",
-      "bytes": 55076,
+      "bytes": 59616,
       "description": "",
       "animations": [
         "Walk"
@@ -23,7 +23,7 @@
     {
       "name": "human-fisher",
       "file": "human-fisher.glb",
-      "bytes": 58080,
+      "bytes": 58248,
       "description": "Fisher with hat and fishing rod.",
       "animations": []
     },

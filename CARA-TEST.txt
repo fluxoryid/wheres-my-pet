@@ -1,0 +1,17 @@
+CARA MENJALANKAN
+
+1. Ekstrak ZIP ini.
+2. Buka terminal di folder wheres-my-pet.
+3. Jalankan: python3 -m http.server 8000 --directory dist
+   Windows: py -m http.server 8000 --directory dist
+4. Buka http://localhost:8000 di Chrome atau Edge dengan akselerasi hardware aktif.
+5. Klik Masuk ke kota. WASD berjalan, mouse melihat, E interaksi, Esc melepas mouse.
+
+Jangan membuka index.html langsung melalui file://; modul JS dan GLB memerlukan HTTP.
+Tidak perlu npm install atau API key. Audio dan model sudah disertakan.
+Pencahayaan mengikuti waktu Asia/Jakarta; lampu aktif sore dan malam.
+Pemain sendiri memakai kamera FPS. Model tubuh terlihat pada warga, pemain lain, dan halaman models.html.
+
+Uji otomatis (Node.js): node --test tests/*.test.mjs
+Versi ini berisi perbaikan animasi, penerangan lokal dan material PBR.
+Gameplay kota penuh/performa GPU dan multiplayer belum terverifikasi menyeluruh.
