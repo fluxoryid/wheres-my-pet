@@ -1,6 +1,821 @@
 {
   "provider": "ElevenLabs",
-  "status": "requires_connection",
-  "description": "No ElevenLabs audio has been generated yet. Add ELEVENLABS_API_KEY through secure environment settings and run scripts/generate-elevenlabs.py. This manifest never stores the key.",
-  "clips": []
+  "source": "Connected ElevenLabs Creative Studio",
+  "flow_id": "6JKJ2xDm8Up1EPQf4bid",
+  "status": "ready",
+  "expected_categories": [
+    "birds",
+    "citizen",
+    "crowd",
+    "footsteps",
+    "horn",
+    "music",
+    "owner-voice",
+    "pet-bird",
+    "pet-cat",
+    "pet-dog",
+    "pet-goat",
+    "pet-horse",
+    "pet-reptile",
+    "pet-small",
+    "pickup",
+    "rescue-voice",
+    "river",
+    "success",
+    "tools",
+    "traffic",
+    "welding",
+    "wind"
+  ],
+  "available_categories": [
+    "birds",
+    "citizen",
+    "crowd",
+    "footsteps",
+    "horn",
+    "music",
+    "owner-voice",
+    "pet-bird",
+    "pet-cat",
+    "pet-dog",
+    "pet-goat",
+    "pet-horse",
+    "pet-reptile",
+    "pet-small",
+    "pickup",
+    "rescue-voice",
+    "river",
+    "success",
+    "tools",
+    "traffic",
+    "welding",
+    "wind"
+  ],
+  "clips": [
+    {
+      "id": "birds-wMuqrIOalZKYDmELi6FY",
+      "category": "birds",
+      "file": "birds-wMuqrIOalZKYDmELi6FY.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "wMuqrIOalZKYDmELi6FY",
+      "duration": 10.031,
+      "loop": true
+    },
+    {
+      "id": "birds-nd4EOuLFpkntlfLPcsCm",
+      "category": "birds",
+      "file": "birds-nd4EOuLFpkntlfLPcsCm.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "nd4EOuLFpkntlfLPcsCm",
+      "duration": 10.031,
+      "loop": true
+    },
+    {
+      "id": "birds-dGqYTJIlZNP2hs4K6Boq",
+      "category": "birds",
+      "file": "birds-dGqYTJIlZNP2hs4K6Boq.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "dGqYTJIlZNP2hs4K6Boq",
+      "duration": 10.031,
+      "loop": true
+    },
+    {
+      "id": "wind-hTulRAPIIu86tj3xLt9O",
+      "category": "wind",
+      "file": "wind-hTulRAPIIu86tj3xLt9O.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "hTulRAPIIu86tj3xLt9O",
+      "duration": 12.042,
+      "loop": true
+    },
+    {
+      "id": "wind-C28VL7AyeU4Nb5kTHbNS",
+      "category": "wind",
+      "file": "wind-C28VL7AyeU4Nb5kTHbNS.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "C28VL7AyeU4Nb5kTHbNS",
+      "duration": 12.042,
+      "loop": true
+    },
+    {
+      "id": "wind-5foQL2HfogN1NIZHTKE4",
+      "category": "wind",
+      "file": "wind-5foQL2HfogN1NIZHTKE4.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "5foQL2HfogN1NIZHTKE4",
+      "duration": 12.042,
+      "loop": true
+    },
+    {
+      "id": "river-XoaPQRL5T5pRS2KkozTf",
+      "category": "river",
+      "file": "river-XoaPQRL5T5pRS2KkozTf.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "XoaPQRL5T5pRS2KkozTf",
+      "duration": 12.042,
+      "loop": true
+    },
+    {
+      "id": "river-jiwpWKhOzy6L4GhlYciM",
+      "category": "river",
+      "file": "river-jiwpWKhOzy6L4GhlYciM.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "jiwpWKhOzy6L4GhlYciM",
+      "duration": 12.042,
+      "loop": true
+    },
+    {
+      "id": "river-DlKlGHIjcYgYJc8zX9Ni",
+      "category": "river",
+      "file": "river-DlKlGHIjcYgYJc8zX9Ni.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "DlKlGHIjcYgYJc8zX9Ni",
+      "duration": 12.042,
+      "loop": true
+    },
+    {
+      "id": "traffic-KZrj0vbEX2szlA1DU6xh",
+      "category": "traffic",
+      "file": "traffic-KZrj0vbEX2szlA1DU6xh.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "KZrj0vbEX2szlA1DU6xh",
+      "duration": 12.042,
+      "loop": true
+    },
+    {
+      "id": "traffic-W9QMhYuRgJp9ahUUEish",
+      "category": "traffic",
+      "file": "traffic-W9QMhYuRgJp9ahUUEish.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "W9QMhYuRgJp9ahUUEish",
+      "duration": 12.042,
+      "loop": true
+    },
+    {
+      "id": "traffic-X1uWch2EECuKi6QP7VEb",
+      "category": "traffic",
+      "file": "traffic-X1uWch2EECuKi6QP7VEb.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "X1uWch2EECuKi6QP7VEb",
+      "duration": 12.042,
+      "loop": true
+    },
+    {
+      "id": "horn-x7cCDNAKFVgWOLDfGZCF",
+      "category": "horn",
+      "file": "horn-x7cCDNAKFVgWOLDfGZCF.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "x7cCDNAKFVgWOLDfGZCF",
+      "duration": 3.03,
+      "loop": false
+    },
+    {
+      "id": "horn-HkYEKOE8o9Nb7B2uEYJr",
+      "category": "horn",
+      "file": "horn-HkYEKOE8o9Nb7B2uEYJr.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "HkYEKOE8o9Nb7B2uEYJr",
+      "duration": 3.03,
+      "loop": false
+    },
+    {
+      "id": "horn-26HmQxp8GxsJo1q7QZUr",
+      "category": "horn",
+      "file": "horn-26HmQxp8GxsJo1q7QZUr.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "26HmQxp8GxsJo1q7QZUr",
+      "duration": 3.03,
+      "loop": false
+    },
+    {
+      "id": "crowd-0ir1UkwNCMc5S2FabqCf",
+      "category": "crowd",
+      "file": "crowd-0ir1UkwNCMc5S2FabqCf.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "0ir1UkwNCMc5S2FabqCf",
+      "duration": 12.042,
+      "loop": true
+    },
+    {
+      "id": "crowd-TQE5mbNdEfiP3tiyhL9v",
+      "category": "crowd",
+      "file": "crowd-TQE5mbNdEfiP3tiyhL9v.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "TQE5mbNdEfiP3tiyhL9v",
+      "duration": 12.042,
+      "loop": true
+    },
+    {
+      "id": "crowd-y7kgoc3gOtWK0EyK5fgs",
+      "category": "crowd",
+      "file": "crowd-y7kgoc3gOtWK0EyK5fgs.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "y7kgoc3gOtWK0EyK5fgs",
+      "duration": 12.042,
+      "loop": true
+    },
+    {
+      "id": "footsteps-x547b9TXJsONjRFaEjFx",
+      "category": "footsteps",
+      "file": "footsteps-x547b9TXJsONjRFaEjFx.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "x547b9TXJsONjRFaEjFx",
+      "duration": 6.034,
+      "loop": true
+    },
+    {
+      "id": "footsteps-c6KNzMC8IlUzRV5dNvfH",
+      "category": "footsteps",
+      "file": "footsteps-c6KNzMC8IlUzRV5dNvfH.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "c6KNzMC8IlUzRV5dNvfH",
+      "duration": 6.034,
+      "loop": true
+    },
+    {
+      "id": "tools-vmvWKCvsqOIf7JQDnAg7",
+      "category": "tools",
+      "file": "tools-vmvWKCvsqOIf7JQDnAg7.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "vmvWKCvsqOIf7JQDnAg7",
+      "duration": 8.046,
+      "loop": true
+    },
+    {
+      "id": "tools-lPaJZX4EIY46nSTf6D96",
+      "category": "tools",
+      "file": "tools-lPaJZX4EIY46nSTf6D96.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "lPaJZX4EIY46nSTf6D96",
+      "duration": 8.046,
+      "loop": true
+    },
+    {
+      "id": "tools-buyrplHe4LAkDUIFs1XP",
+      "category": "tools",
+      "file": "tools-buyrplHe4LAkDUIFs1XP.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "buyrplHe4LAkDUIFs1XP",
+      "duration": 8.046,
+      "loop": true
+    },
+    {
+      "id": "welding-wzKSc5DtwXlMctpjastx",
+      "category": "welding",
+      "file": "welding-wzKSc5DtwXlMctpjastx.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "wzKSc5DtwXlMctpjastx",
+      "duration": 8.046,
+      "loop": true
+    },
+    {
+      "id": "welding-vxou5IF01UXZTdM7AoFY",
+      "category": "welding",
+      "file": "welding-vxou5IF01UXZTdM7AoFY.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "vxou5IF01UXZTdM7AoFY",
+      "duration": 8.046,
+      "loop": true
+    },
+    {
+      "id": "welding-WKReyBj7STnlu2mYCxYR",
+      "category": "welding",
+      "file": "welding-WKReyBj7STnlu2mYCxYR.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "WKReyBj7STnlu2mYCxYR",
+      "duration": 8.046,
+      "loop": true
+    },
+    {
+      "id": "pet-dog-eDOnYs3Nz4ftDp3zvYPt",
+      "category": "pet-dog",
+      "file": "pet-dog-eDOnYs3Nz4ftDp3zvYPt.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "eDOnYs3Nz4ftDp3zvYPt",
+      "duration": 4.049,
+      "loop": false,
+      "animalIds": [
+        0,
+        6,
+        11,
+        18,
+        26,
+        31,
+        33,
+        35,
+        38,
+        44,
+        49
+      ]
+    },
+    {
+      "id": "pet-dog-xpAww9ZYV0e1uFUxn2uE",
+      "category": "pet-dog",
+      "file": "pet-dog-xpAww9ZYV0e1uFUxn2uE.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "xpAww9ZYV0e1uFUxn2uE",
+      "duration": 4.049,
+      "loop": false,
+      "animalIds": [
+        0,
+        6,
+        11,
+        18,
+        26,
+        31,
+        33,
+        35,
+        38,
+        44,
+        49
+      ]
+    },
+    {
+      "id": "pet-cat-yWQdGjpaza7QzvoP0IVp",
+      "category": "pet-cat",
+      "file": "pet-cat-yWQdGjpaza7QzvoP0IVp.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "yWQdGjpaza7QzvoP0IVp",
+      "duration": 4.049,
+      "loop": false,
+      "animalIds": [
+        1,
+        27,
+        29,
+        36,
+        46
+      ]
+    },
+    {
+      "id": "pet-cat-U6R626KSJUyPJvIhPhCO",
+      "category": "pet-cat",
+      "file": "pet-cat-U6R626KSJUyPJvIhPhCO.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "U6R626KSJUyPJvIhPhCO",
+      "duration": 4.049,
+      "loop": false,
+      "animalIds": [
+        1,
+        27,
+        29,
+        36,
+        46
+      ]
+    },
+    {
+      "id": "pet-cat-foM2ONZ0EM9jeZsI9km0",
+      "category": "pet-cat",
+      "file": "pet-cat-foM2ONZ0EM9jeZsI9km0.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "foM2ONZ0EM9jeZsI9km0",
+      "duration": 4.049,
+      "loop": false,
+      "animalIds": [
+        1,
+        27,
+        29,
+        36,
+        46
+      ]
+    },
+    {
+      "id": "pet-horse-7n4W0FU6nuT7JP3JYTyD",
+      "category": "pet-horse",
+      "file": "pet-horse-7n4W0FU6nuT7JP3JYTyD.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "7n4W0FU6nuT7JP3JYTyD",
+      "duration": 4.049,
+      "loop": false,
+      "animalIds": [
+        9,
+        15,
+        17,
+        20,
+        48
+      ]
+    },
+    {
+      "id": "pet-horse-BQy9YxNH54hwr2rp63Hl",
+      "category": "pet-horse",
+      "file": "pet-horse-BQy9YxNH54hwr2rp63Hl.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "BQy9YxNH54hwr2rp63Hl",
+      "duration": 4.049,
+      "loop": false,
+      "animalIds": [
+        9,
+        15,
+        17,
+        20,
+        48
+      ]
+    },
+    {
+      "id": "pet-small-jTs2tYHMH70N2x3AeNtT",
+      "category": "pet-small",
+      "file": "pet-small-jTs2tYHMH70N2x3AeNtT.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "jTs2tYHMH70N2x3AeNtT",
+      "duration": 4.049,
+      "loop": false,
+      "animalIds": [
+        2,
+        3,
+        7,
+        12,
+        14,
+        19,
+        21,
+        25,
+        28,
+        30,
+        37,
+        40,
+        41,
+        45,
+        47
+      ]
+    },
+    {
+      "id": "pet-small-oKorhKOIh0dkh6cdiLgO",
+      "category": "pet-small",
+      "file": "pet-small-oKorhKOIh0dkh6cdiLgO.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "oKorhKOIh0dkh6cdiLgO",
+      "duration": 4.049,
+      "loop": false,
+      "animalIds": [
+        2,
+        3,
+        7,
+        12,
+        14,
+        19,
+        21,
+        25,
+        28,
+        30,
+        37,
+        40,
+        41,
+        45,
+        47
+      ]
+    },
+    {
+      "id": "pet-bird-a3rTSb1InpnlJYBZq1UP",
+      "category": "pet-bird",
+      "file": "pet-bird-a3rTSb1InpnlJYBZq1UP.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "a3rTSb1InpnlJYBZq1UP",
+      "duration": 4.049,
+      "loop": false,
+      "animalIds": [
+        24,
+        43
+      ]
+    },
+    {
+      "id": "pet-bird-K9fkziHlwu2u9LtCobdR",
+      "category": "pet-bird",
+      "file": "pet-bird-K9fkziHlwu2u9LtCobdR.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "K9fkziHlwu2u9LtCobdR",
+      "duration": 4.049,
+      "loop": false,
+      "animalIds": [
+        24,
+        43
+      ]
+    },
+    {
+      "id": "pet-goat-FJizLtnpOHhhPQY9T6Fc",
+      "category": "pet-goat",
+      "file": "pet-goat-FJizLtnpOHhhPQY9T6Fc.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "FJizLtnpOHhhPQY9T6Fc",
+      "duration": 4.049,
+      "loop": false,
+      "animalIds": [
+        5,
+        8,
+        16,
+        22,
+        32,
+        39
+      ]
+    },
+    {
+      "id": "pet-goat-MMFzxEb5FWI3oXzFNSvW",
+      "category": "pet-goat",
+      "file": "pet-goat-MMFzxEb5FWI3oXzFNSvW.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "MMFzxEb5FWI3oXzFNSvW",
+      "duration": 4.049,
+      "loop": false,
+      "animalIds": [
+        5,
+        8,
+        16,
+        22,
+        32,
+        39
+      ]
+    },
+    {
+      "id": "pet-goat-iqChxOLy3KBos0mF4Itt",
+      "category": "pet-goat",
+      "file": "pet-goat-iqChxOLy3KBos0mF4Itt.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "iqChxOLy3KBos0mF4Itt",
+      "duration": 4.049,
+      "loop": false,
+      "animalIds": [
+        5,
+        8,
+        16,
+        22,
+        32,
+        39
+      ]
+    },
+    {
+      "id": "success-hLrlOIE5oOn7LhmDloEn",
+      "category": "success",
+      "file": "success-hLrlOIE5oOn7LhmDloEn.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "hLrlOIE5oOn7LhmDloEn",
+      "duration": 3.03,
+      "loop": false
+    },
+    {
+      "id": "success-saYlrdAtfYnL4zgffziz",
+      "category": "success",
+      "file": "success-saYlrdAtfYnL4zgffziz.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "saYlrdAtfYnL4zgffziz",
+      "duration": 3.03,
+      "loop": false
+    },
+    {
+      "id": "success-ulMTPG70pTw252mFKLNy",
+      "category": "success",
+      "file": "success-ulMTPG70pTw252mFKLNy.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "ulMTPG70pTw252mFKLNy",
+      "duration": 3.03,
+      "loop": false
+    },
+    {
+      "id": "pickup-5w9B5fSZSzHfHfwrFz1d",
+      "category": "pickup",
+      "file": "pickup-5w9B5fSZSzHfHfwrFz1d.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "5w9B5fSZSzHfHfwrFz1d",
+      "duration": 2.038,
+      "loop": false
+    },
+    {
+      "id": "pickup-Zb9a159Slw1nuha6lFu1",
+      "category": "pickup",
+      "file": "pickup-Zb9a159Slw1nuha6lFu1.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "Zb9a159Slw1nuha6lFu1",
+      "duration": 2.038,
+      "loop": false
+    },
+    {
+      "id": "citizen-1uCqytMriNwny36KCYrt",
+      "category": "citizen",
+      "file": "citizen-1uCqytMriNwny36KCYrt.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_multilingual_v2",
+      "generation_id": "1uCqytMriNwny36KCYrt",
+      "duration": 8.202,
+      "loop": false
+    },
+    {
+      "id": "citizen-Pst31yHKfoc4MCxvokpS",
+      "category": "citizen",
+      "file": "citizen-Pst31yHKfoc4MCxvokpS.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_multilingual_v2",
+      "generation_id": "Pst31yHKfoc4MCxvokpS",
+      "duration": 8.725,
+      "loop": false
+    },
+    {
+      "id": "owner-voice-IpW5MwOjRBXYqer4q1Zv",
+      "category": "owner-voice",
+      "file": "owner-voice-IpW5MwOjRBXYqer4q1Zv.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_multilingual_v2",
+      "generation_id": "IpW5MwOjRBXYqer4q1Zv",
+      "duration": 6.949,
+      "loop": false
+    },
+    {
+      "id": "owner-voice-FMpLeis6cWs3SkxJsFPc",
+      "category": "owner-voice",
+      "file": "owner-voice-FMpLeis6cWs3SkxJsFPc.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_multilingual_v2",
+      "generation_id": "FMpLeis6cWs3SkxJsFPc",
+      "duration": 7.367,
+      "loop": false
+    },
+    {
+      "id": "rescue-voice-xPEA77jUIs1z8r0ylKDi",
+      "category": "rescue-voice",
+      "file": "rescue-voice-xPEA77jUIs1z8r0ylKDi.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_multilingual_v2",
+      "generation_id": "xPEA77jUIs1z8r0ylKDi",
+      "duration": 6.296,
+      "loop": false
+    },
+    {
+      "id": "rescue-voice-l3pS8T232N3x8QRpjfeY",
+      "category": "rescue-voice",
+      "file": "rescue-voice-l3pS8T232N3x8QRpjfeY.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_multilingual_v2",
+      "generation_id": "l3pS8T232N3x8QRpjfeY",
+      "duration": 6.87,
+      "loop": false
+    },
+    {
+      "id": "footsteps-GGC7SNAKOuGkdQCdenta",
+      "category": "footsteps",
+      "file": "footsteps-GGC7SNAKOuGkdQCdenta.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "GGC7SNAKOuGkdQCdenta",
+      "duration": 6.034,
+      "loop": true
+    },
+    {
+      "id": "pickup-MOhS62IpGuJosq11UeQV",
+      "category": "pickup",
+      "file": "pickup-MOhS62IpGuJosq11UeQV.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "MOhS62IpGuJosq11UeQV",
+      "duration": 2.038,
+      "loop": false
+    },
+    {
+      "id": "music-Lm2yytT33DhGfprbL9rV",
+      "category": "music",
+      "file": "music-Lm2yytT33DhGfprbL9rV.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_music_v2",
+      "generation_id": "Lm2yytT33DhGfprbL9rV",
+      "duration": 30.041,
+      "loop": true
+    },
+    {
+      "id": "music-z6DNmRQmjgRz7Db7CzxT",
+      "category": "music",
+      "file": "music-z6DNmRQmjgRz7Db7CzxT.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_music_v2",
+      "generation_id": "z6DNmRQmjgRz7Db7CzxT",
+      "duration": 30.041,
+      "loop": true
+    },
+    {
+      "id": "music-xs6UAgHrHE6sWx36SGEX",
+      "category": "music",
+      "file": "music-xs6UAgHrHE6sWx36SGEX.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_music_v2",
+      "generation_id": "xs6UAgHrHE6sWx36SGEX",
+      "duration": 30.041,
+      "loop": true
+    },
+    {
+      "id": "music-M1iEwYUkvBwngtlWPqE9",
+      "category": "music",
+      "file": "music-M1iEwYUkvBwngtlWPqE9.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_music_v2",
+      "generation_id": "M1iEwYUkvBwngtlWPqE9",
+      "duration": 30.041,
+      "loop": true
+    },
+    {
+      "id": "pet-reptile-Cs2BeeED7rIrnsKSs7FI",
+      "category": "pet-reptile",
+      "file": "pet-reptile-Cs2BeeED7rIrnsKSs7FI.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "Cs2BeeED7rIrnsKSs7FI",
+      "duration": 4.049,
+      "loop": false,
+      "animalIds": [
+        4,
+        13,
+        23,
+        34,
+        42
+      ]
+    },
+    {
+      "id": "pet-reptile-dMvl2AM3UvChnWXZOXut",
+      "category": "pet-reptile",
+      "file": "pet-reptile-dMvl2AM3UvChnWXZOXut.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "dMvl2AM3UvChnWXZOXut",
+      "duration": 4.049,
+      "loop": false,
+      "animalIds": [
+        4,
+        13,
+        23,
+        34,
+        42
+      ]
+    },
+    {
+      "id": "pet-reptile-Rctvhczr0w51FrBQmtzw",
+      "category": "pet-reptile",
+      "file": "pet-reptile-Rctvhczr0w51FrBQmtzw.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "Rctvhczr0w51FrBQmtzw",
+      "duration": 4.049,
+      "loop": false,
+      "animalIds": [
+        4,
+        13,
+        23,
+        34,
+        42
+      ]
+    },
+    {
+      "id": "pet-reptile-DDJ6wmVDwCYaXeQAQMAF",
+      "category": "pet-reptile",
+      "file": "pet-reptile-DDJ6wmVDwCYaXeQAQMAF.mp3",
+      "provider": "ElevenLabs",
+      "model": "eleven_text_to_sound_v2",
+      "generation_id": "DDJ6wmVDwCYaXeQAQMAF",
+      "duration": 4.049,
+      "loop": false,
+      "animalIds": [
+        4,
+        13,
+        23,
+        34,
+        42
+      ]
+    }
+  ]
 }

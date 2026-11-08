@@ -39,16 +39,16 @@ Koneksi bergantung pada WebRTC/STUN dan relay publik. Tidak ada TURN khusus, seh
 
 ## ElevenLabs langsung
 
-Audio runtime baru tidak menggunakan Runway, Krea, browser TTS atau suara sintetis pengganti. `scripts/generate-elevenlabs.py` memanggil API resmi `https://api.elevenlabs.io` langsung untuk SFX dan ucapan Indonesia.
+Paket runtime sudah berisi **61 klip lokal dari 22 kategori audio**, dibuat melalui konektor ElevenLabs langsung: burung, angin, sungai, lalu lintas, klakson, keramaian, langkah kaki, alat, las, tujuh keluarga suara/pergerakan hewan, efek keberhasilan dan penjemputan, tiga dialog Indonesia, dan musik instrumental. Beberapa variasi awal terkena batas antrean; klip yang diterima telah selesai dan tidak dibuat ulang.
 
-Key dibaca dari environment `ELEVENLABS_API_KEY` atau file privat `.env.local` yang diabaikan Git, tidak masuk manifest/bundle dan tidak dicetak. Vault yang hanya menyimpan key belum otomatis menjadi binding environment. `.env.example` hanya berisi nama variabel kosong.
+`dist/audio/manifest.json` menyimpan kategori, model, generation ID, durasi dan nama file lokal. Tidak menyimpan signed download URLs atau API key. Model SFX: eleven_text_to_sound_v2; dialog: eleven_multilingual_v2; musik: eleven_music_v2. Suara dialog dipilih dari daftar suara Indonesia yang tersedia pada konektor.
 
-Manifest audio kosong berarti `requires_connection`: game menunjukkan audio belum tersedia. Setelah key terpasang, jalankan generator, verifikasi hasil MP3, lalu terbitkan ulang `dist/`. Generator sequential dan resumable; klip selesai tidak dibuat ulang. Paket/credit/izin ElevenLabs berlaku saat generasi.
+Audio engine memakai listener FPS/HRTF untuk sumber di dunia 3D dan memilih variasi klakson/dialog bergantian. Angin dan musik menjadi lapisan latar; langkah kaki aktif saat berjalan; suara alat mengikuti alat pembuka kandang yang dipakai. Tombol Masuk ke kota mengaktifkan audio melalui gesture pengguna, dan ♫ mematikan seluruh loop. Audio yang gagal dimuat tidak menghalangi klip lainnya.
 
-Audio engine memakai listener FPS/HRTF untuk burung, angin, air, kendaraan, klakson, warga, hewan, langkah kaki dan alat sesuai aset yang tersedia. API key tidak diperlukan di browser atau situs publik.
+API key tidak diperlukan oleh browser maupun situs yang diterbitkan. `scripts/import-elevenlabs-assets.py` mengimpor hasil konektor dari metadata unduhan temporer privat, mengonversi ke MP3 dan menormalkan level audio. Signed URLs tidak diterbitkan. `scripts/generate-elevenlabs.py` tetap tersedia sebagai jalur API resmi alternatif bila environment kelak memiliki key, tetapi tidak dipakai untuk paket ini. File privat `.env.local` diabaikan Git dan tidak masuk paket situs.
 
 ## Verifikasi
 
-`node --test tests/*.test.mjs` — 17 pemeriksaan aturan game, kapasitas, jarak/kecepatan, reward, kolaborasi/pengkhianatan, kandang/patroli, gerak hewan, arah FPS, struktur GLB/material/animasi dan kejujuran status audio.
+`node --test tests/*.test.mjs` — 20 pemeriksaan aturan game, kapasitas, jarak/kecepatan, reward, kolaborasi/pengkhianatan, kandang/patroli, gerak hewan, arah FPS, struktur GLB/material/animasi dan kelengkapan aset, pergantian variasi klakson dan penghentian semua loop saat mute.
 
-Preview cloud mengalami relay timeout pada sesi pengembangan; gameplay FPS dan audio dalam browser belum terverifikasi. Render aset di Blender membantu pemeriksaan bentuk model, bukan pengganti uji browser.
+Preview cloud mengalami relay timeout pada sesi pengembangan; gameplay FPS dan audio spasial dalam browser belum terverifikasi. Semua 61 MP3 berhasil didekode dan diverifikasi tidak senyap dengan FFmpeg. Render aset di Blender membantu pemeriksaan bentuk model, bukan pengganti uji browser.
