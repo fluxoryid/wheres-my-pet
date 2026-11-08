@@ -1,0 +1,581 @@
+{
+  "format": "GLB",
+  "generator": "Where’s My Pet asset builder",
+  "models": [
+    {
+      "name": "human-male",
+      "file": "human-male.glb",
+      "bytes": 55048,
+      "description": "Civilian, articulated limbs and natural human proportions.",
+      "animations": [
+        "Walk"
+      ]
+    },
+    {
+      "name": "human-female",
+      "file": "human-female.glb",
+      "bytes": 55076,
+      "description": "",
+      "animations": [
+        "Walk"
+      ]
+    },
+    {
+      "name": "human-fisher",
+      "file": "human-fisher.glb",
+      "bytes": 58080,
+      "description": "Fisher with hat and fishing rod.",
+      "animations": []
+    },
+    {
+      "name": "pet-00",
+      "file": "pet-00.glb",
+      "bytes": 75588,
+      "description": "Milo — Anjing Golden Retriever",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-01",
+      "file": "pet-01.glb",
+      "bytes": 78856,
+      "description": "Luna — Kucing Persia",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-02",
+      "file": "pet-02.glb",
+      "bytes": 76336,
+      "description": "Mochi — Kelinci",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-03",
+      "file": "pet-03.glb",
+      "bytes": 75592,
+      "description": "Pip — Hamster",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-04",
+      "file": "pet-04.glb",
+      "bytes": 18620,
+      "description": "Kiko — Kura-kura darat",
+      "animations": []
+    },
+    {
+      "name": "pet-05",
+      "file": "pet-05.glb",
+      "bytes": 75692,
+      "description": "Bambi — Rusa",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-06",
+      "file": "pet-06.glb",
+      "bytes": 75568,
+      "description": "Nala — Rubah",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-07",
+      "file": "pet-07.glb",
+      "bytes": 75592,
+      "description": "Oreo — Landak",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-08",
+      "file": "pet-08.glb",
+      "bytes": 75692,
+      "description": "Coco — Kambing",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-09",
+      "file": "pet-09.glb",
+      "bytes": 75696,
+      "description": "Teddy — Kuda poni",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-10",
+      "file": "pet-10.glb",
+      "bytes": 75572,
+      "description": "Poppy — Babi mini",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-11",
+      "file": "pet-11.glb",
+      "bytes": 75568,
+      "description": "Suki — Musang",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-12",
+      "file": "pet-12.glb",
+      "bytes": 75572,
+      "description": "Boba — Kapibara",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-13",
+      "file": "pet-13.glb",
+      "bytes": 75592,
+      "description": "Rio — Iguana",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-14",
+      "file": "pet-14.glb",
+      "bytes": 75588,
+      "description": "Snow — Marmut",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-15",
+      "file": "pet-15.glb",
+      "bytes": 75692,
+      "description": "Max — Keledai",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-16",
+      "file": "pet-16.glb",
+      "bytes": 75684,
+      "description": "Rumi — Domba",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-17",
+      "file": "pet-17.glb",
+      "bytes": 75688,
+      "description": "Ziggy — Zebra",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-18",
+      "file": "pet-18.glb",
+      "bytes": 75568,
+      "description": "Jojo — Ferret",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-19",
+      "file": "pet-19.glb",
+      "bytes": 75592,
+      "description": "Pico — Tikus putih",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-20",
+      "file": "pet-20.glb",
+      "bytes": 75692,
+      "description": "Gigi — Kuda",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-21",
+      "file": "pet-21.glb",
+      "bytes": 75592,
+      "description": "Nini — Chinchilla",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-22",
+      "file": "pet-22.glb",
+      "bytes": 75688,
+      "description": "Taro — Alpaka",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-23",
+      "file": "pet-23.glb",
+      "bytes": 34892,
+      "description": "Ruby — Ular darat",
+      "animations": []
+    },
+    {
+      "name": "pet-24",
+      "file": "pet-24.glb",
+      "bytes": 23684,
+      "description": "Sunny — Ayam",
+      "animations": []
+    },
+    {
+      "name": "pet-25",
+      "file": "pet-25.glb",
+      "bytes": 75592,
+      "description": "Peanut — Tupai",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-26",
+      "file": "pet-26.glb",
+      "bytes": 75572,
+      "description": "Juno — Anjing Shiba",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-27",
+      "file": "pet-27.glb",
+      "bytes": 78864,
+      "description": "Maple — Kucing jingga",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-28",
+      "file": "pet-28.glb",
+      "bytes": 76344,
+      "description": "Basil — Kelinci lop",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-29",
+      "file": "pet-29.glb",
+      "bytes": 78868,
+      "description": "Miso — Kucing tuxedo",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-30",
+      "file": "pet-30.glb",
+      "bytes": 76344,
+      "description": "Panda — Kelinci belang",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-31",
+      "file": "pet-31.glb",
+      "bytes": 75576,
+      "description": "Nova — Anjing Husky",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-32",
+      "file": "pet-32.glb",
+      "bytes": 75692,
+      "description": "Daisy — Sapi mini",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-33",
+      "file": "pet-33.glb",
+      "bytes": 75580,
+      "description": "Mocha — Anjing Poodle",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-34",
+      "file": "pet-34.glb",
+      "bytes": 18620,
+      "description": "Olive — Kura-kura Sulcata",
+      "animations": []
+    },
+    {
+      "name": "pet-35",
+      "file": "pet-35.glb",
+      "bytes": 75572,
+      "description": "Toto — Anjing Corgi",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-36",
+      "file": "pet-36.glb",
+      "bytes": 78860,
+      "description": "Nori — Kucing Siam",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-37",
+      "file": "pet-37.glb",
+      "bytes": 75592,
+      "description": "Hazel — Landak mini",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-38",
+      "file": "pet-38.glb",
+      "bytes": 75576,
+      "description": "Otis — Anjing Beagle",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-39",
+      "file": "pet-39.glb",
+      "bytes": 75696,
+      "description": "Clover — Kambing mini",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-40",
+      "file": "pet-40.glb",
+      "bytes": 75592,
+      "description": "Fifi — Marmut Peru",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-41",
+      "file": "pet-41.glb",
+      "bytes": 75596,
+      "description": "Remy — Tikus Dumbo",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-42",
+      "file": "pet-42.glb",
+      "bytes": 75596,
+      "description": "Mango — Iguana merah",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-43",
+      "file": "pet-43.glb",
+      "bytes": 23680,
+      "description": "Dodo — Bebek",
+      "animations": []
+    },
+    {
+      "name": "pet-44",
+      "file": "pet-44.glb",
+      "bytes": 75576,
+      "description": "Rocco — Anjing Dalmatian",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-45",
+      "file": "pet-45.glb",
+      "bytes": 75600,
+      "description": "Cinnamon — Hamster Syrian",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-46",
+      "file": "pet-46.glb",
+      "bytes": 78864,
+      "description": "Loki — Kucing Bengal",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-47",
+      "file": "pet-47.glb",
+      "bytes": 76344,
+      "description": "Fluffy — Kelinci Anggora",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-48",
+      "file": "pet-48.glb",
+      "bytes": 75692,
+      "description": "Zuzu — Kuda mini",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "pet-49",
+      "file": "pet-49.glb",
+      "bytes": 75580,
+      "description": "Charlie — Anjing Labrador",
+      "animations": [
+        "Walk",
+        "Tail"
+      ]
+    },
+    {
+      "name": "vehicle-sedan",
+      "file": "vehicle-sedan.glb",
+      "bytes": 289108,
+      "description": "",
+      "animations": []
+    },
+    {
+      "name": "building-office",
+      "file": "building-office.glb",
+      "bytes": 145164,
+      "description": "",
+      "animations": []
+    },
+    {
+      "name": "building-house",
+      "file": "building-house.glb",
+      "bytes": 13880,
+      "description": "",
+      "animations": []
+    },
+    {
+      "name": "building-shop",
+      "file": "building-shop.glb",
+      "bytes": 11016,
+      "description": "",
+      "animations": []
+    },
+    {
+      "name": "park-bench",
+      "file": "park-bench.glb",
+      "bytes": 234788,
+      "description": "",
+      "animations": []
+    },
+    {
+      "name": "flowers",
+      "file": "flowers.glb",
+      "bytes": 57364,
+      "description": "",
+      "animations": []
+    },
+    {
+      "name": "street-lamp",
+      "file": "street-lamp.glb",
+      "bytes": 33596,
+      "description": "",
+      "animations": []
+    },
+    {
+      "name": "river-water",
+      "file": "river-water.glb",
+      "bytes": 20712,
+      "description": "Water surface; waves and current animated at runtime.",
+      "animations": []
+    },
+    {
+      "name": "tree-natural",
+      "file": "tree-natural.glb",
+      "bytes": 4605428,
+      "description": "Tree Small 02 — Poly Haven, Rico Cilliers. CC0, optimized for browser rendering.",
+      "source": "https://polyhaven.com/a/tree_small_02",
+      "license": "CC0-1.0",
+      "animations": []
+    }
+  ]
+}

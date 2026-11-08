@@ -1,0 +1,6 @@
+{
+  "provider": "ElevenLabs",
+  "status": "requires_connection",
+  "description": "No ElevenLabs audio has been generated yet. Add ELEVENLABS_API_KEY through secure environment settings and run scripts/generate-elevenlabs.py. This manifest never stores the key.",
+  "clips": []
+}

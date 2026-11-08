@@ -1,36 +1,54 @@
-# Where’s My Pet? — kota 1.000 × 1.000
+# Where’s My Pet? — FPS + GLB
 
-Game Three.js berbahasa Indonesia, tanpa build step. Sajikan direktori `dist/` melalui HTTP(S).
+Game Three.js berbahasa Indonesia, tanpa build step. Sajikan `dist/` melalui HTTP(S).
 
-## Dunia dan permainan
+## Dunia dan kontrol
 
-- Batas dunia X/Z −500…500: tepat 1.000 × 1.000 unit Three.js. Satuan ini tidak otomatis berarti meter.
-- 50 level dengan enam tema. Seed adventure mengacak permutasi 50 profil hewan tanpa pengulangan profil antarlevel. Distrik, tinggi gedung, rute, rumah pemilik, hadiah dan waktu berbeda secara prosedural.
-- Gedung hingga sekitar 210 unit, perumahan, toko, kios, kebun, taman, bunga, rumput, pedestrian, jalan dan empat jembatan sungai. Dasar sungai Y −23, air Y −5, kedalaman sekitar 18 unit.
-- Instancing menggabungkan puluhan ribu bagian statis menjadi sedikit draw call; 110 kendaraan, 160 warga (termasuk 24 pemancing), arus sungai dan foliage beranimasi.
-- Klik objek memberi nama, pemilik dan detail serta zoom. Semua bagian instanced memiliki metadata objek. Objek bergerak memperbarui posisi metadata.
-- PetNet fiktif, brosur pohon/rumah/tiang dan dialog warga memberi potret render 3D, ciri dan lokasi bertimestamp. Hewan berpindah dengan interval yang makin singkat di level lanjut.
-- City Map permanen dan peta besar berisi distrik, sungai, pemain, rumah pemilik, truk dan jejak. Lokasi hewan aktual hanya dengan digital map. Klik peta untuk menandai tujuan; navigasi BFS mengikuti jalan aman.
-- WASD/panah, Shift, tombol sentuh; E untuk objek terdekat. Ambil hewan ≤15 unit, antar ke pemilik ≤22 unit. Tidak ada tombol teleport penyelesaian.
-- Waktu pencarian, penangkapan satwa, pembukaan kandang nyata selama 3/6/18 detik, patroli, gagal, ulang, pembagian hadiah dan sembilan peralatan fungsional.
-- Waktu riil Asia/Jakarta (WIB), empat fase pencahayaan. Web Audio memberi musik, klakson dan celoteh. SpeechSynthesis membaca dialog jika suara perangkat tersedia.
+- Luas tepat 1.000 × 1.000 unit: X dan Z −500…500. Unit Three.js tidak otomatis berarti meter.
+- First-person: kamera setinggi mata, WASD relatif arah pandang, Shift berlari, mouse via Pointer Lock; drag-look tersedia untuk sentuh/browser tanpa Pointer Lock. Esc membebaskan mouse. E atau klik bidikan untuk informasi objek; scroll/+− memberi zoom optik.
+- Pemain menggerakkan karakter sendiri. Tidak ada orbit, teleport atau jalan otomatis. City Map hanya menandai tujuan.
+- Enam tema dalam 50 level prosedural. Seed mengacak permutasi 50 profil hewan tanpa pengulangan profil, susunan distrik, tinggi gedung, rumah pemilik, rute, hadiah dan waktu.
+- Kantor pencakar langit, perumahan, toko, pasar malam, kebun, taman, bunga, rumput, pedestrian, jalan, empat jembatan, sungai berarus. Dasar sungai Y −23, air Y −5.
+- 110 kendaraan, 160 warga termasuk 24 pemancing. Waktu riil Asia/Jakarta (WIB), empat fase pencahayaan; langit menghasilkan environment map untuk material PBR.
 
-## Multiplayer WebRTC
+## Model GLB
 
-Buka Multiplayer, isi nama, buat ruang. Bagikan seluruh kode ke maksimal tujuh pemain dengan akses situs. Pengaturan akses situs tidak diubah. Ruang tidak membuka akses situs kepada pengunjung baru.
+`dist/models/manifest.json` memuat 62 aset GLB standalone: 50 profil hewan, tiga manusia, sedan, gedung kantor, rumah, toko, bangku, bunga, lampu, air dan pohon.
 
-Trystero v0.22.0 MQTT memanfaatkan broker publik untuk signaling terenkripsi dan WebRTC data channels untuk data permainan. Tidak ada backend game terpusat. Host menjalankan GameEngine dan memutuskan batas 8 pemain, waktu, kepemilikan hewan, pembelian, jarak aksi, kecepatan posisi, cooldown dan hadiah. Peer mengirim pose/intent, host mengirim snapshot 5 Hz. Host harus tetap membuka game; host terputus mengakhiri sesi, bukan migrasi host otomatis. Peer non-host tidak dapat mengganti level.
+Material PBR, geometri, tekstur yang tersedia dan animasi tersimpan dalam GLB. Runtime memakai GLTFLoader; instancing untuk bangunan/properti dan pembatasan jarak/jumlah untuk pohon dan warga. Manusia berjalan memakai animation clips GLB; hewan memiliki animasi sesuai anatomi.
 
-Koneksi bergantung pada WebRTC/STUN dan ketersediaan relay publik. Tidak ada TURN khusus; beberapa NAT/jaringan kantor dapat memblokir koneksi. Tidak tersedia jaminan konektivitas semua jaringan. Ini multiplayer kasual dengan host tepercaya, bukan sistem kompetitif dengan anticheat server.
+Manusia dan hewan dibuat secara prosedural dengan bentuk lebih rinci, belum setara karakter fotorealistis hasil scan. Pohon memakai Tree Small 02 bertekstur dari Poly Haven (CC0), dengan optimasi geometri/tekstur. Lisensi/sumber: `dist/models/LICENSES.md`. Builder: `scripts/build-models.mjs`.
 
-Pemain berkolaborasi berbagi petunjuk dan hadiah. Merebut dari radius 15 unit mengubah pemain menjadi kompetitor dengan cooldown 12 detik. Kompetitor yang mengantar mendapat reward penuh. Spawn awal acak; saldo per sesi 250 koin, terpisah dari progres solo. Progres solo memakai localStorage, tidak lintas perangkat.
+Galeri `models.html` memuat file yang sama, mendukung putar/zoom, animasi, dan unduh setiap GLB.
 
-## Pemeriksaan
+## Misi
 
-`node --test tests/engine.test.mjs`
+PetNet fiktif, brosur pohon/rumah/tiang dan percakapan warga memberi potret render 3D, ciri khas, lokasi dan waktu laporan. Hewan berhenti lalu berpindah; laporan lama dapat kedaluwarsa. Digital map melacak lokasi aktual, anjing pelacak memperbarui jejak.
 
-Uji mencakup 50 level, batas kota, determinisme, kapasitas 8, batas kecepatan, jarak aksi, idempotensi reward, kolaborasi, pengkhianatan, kandang, patroli, peralatan, pergerakan hewan dan peluit. Browser QA dicatat terpisah; lulus unit test bukan bukti konektivitas antarperangkat.
+Ambil hewan dari jarak ≤15 unit dan antar ke pemilik ≤22 unit. Jika pencarian habis, hewan masuk truk. Pengait gratis membuka kandang dalam 18 detik; pemotong 3 detik; las 6 detik. Menjauh membatalkan pembukaan. Setelah bebas, tersedia 120 detik mengantar sebelum patroli menangkap pembawa hewan. Ada kondisi menang, gagal, ulang, reward acak, serta sembilan peralatan fungsional. Progres solo disimpan di localStorage.
 
-## Aset dan batas visual
+## Multiplayer
 
-Three.js r170 dan Trystero v0.22.0 di-vendor secara lokal (MIT dan dependensi berlisensi dalam bundle). Tidak ada foto hewan eksternal atau internet langsung. Potret 3D dan model hewan bersifat stilisasi; katalog 50 profil bukan seluruh spesies dunia. Layout berbagi grid jalan, dengan variasi distrik prosedural. Audio dialog memakai suara sistem, bukan rekaman warga individu.
+Trystero v0.22.0 MQTT memakai relay publik untuk signaling terenkripsi dan WebRTC data channels untuk data permainan. Buat ruang dan bagikan seluruh kode kepada maksimal tujuh pemain yang sudah memiliki akses situs. Kode ruang tidak mengubah akses situs.
+
+Host mengatur kapasitas delapan pemain, waktu, kepemilikan hewan, batas kecepatan/jarak, pembelian, cooldown dan reward; peer mengirim pose/intent, host mengirim snapshot 5 Hz. Host harus tetap online; putusnya host mengakhiri sesi. Tidak ada backend anticheat atau migrasi host.
+
+Kolaborasi berbagi petunjuk dan hadiah. Merebut hewan dalam radius 15 unit mengubah pemain menjadi kompetitor dengan cooldown 12 detik. Pengantar kompetitif menerima reward penuh. Spawn awal acak; saldo multiplayer 250 koin per sesi, terpisah dari solo.
+
+Koneksi bergantung pada WebRTC/STUN dan relay publik. Tidak ada TURN khusus, sehingga sebagian NAT/jaringan kantor dapat gagal terhubung. Uji delapan perangkat sekaligus belum dilakukan.
+
+## ElevenLabs langsung
+
+Audio runtime baru tidak menggunakan Runway, Krea, browser TTS atau suara sintetis pengganti. `scripts/generate-elevenlabs.py` memanggil API resmi `https://api.elevenlabs.io` langsung untuk SFX dan ucapan Indonesia.
+
+Key dibaca dari environment `ELEVENLABS_API_KEY` atau file privat `.env.local` yang diabaikan Git, tidak masuk manifest/bundle dan tidak dicetak. Vault yang hanya menyimpan key belum otomatis menjadi binding environment. `.env.example` hanya berisi nama variabel kosong.
+
+Manifest audio kosong berarti `requires_connection`: game menunjukkan audio belum tersedia. Setelah key terpasang, jalankan generator, verifikasi hasil MP3, lalu terbitkan ulang `dist/`. Generator sequential dan resumable; klip selesai tidak dibuat ulang. Paket/credit/izin ElevenLabs berlaku saat generasi.
+
+Audio engine memakai listener FPS/HRTF untuk burung, angin, air, kendaraan, klakson, warga, hewan, langkah kaki dan alat sesuai aset yang tersedia. API key tidak diperlukan di browser atau situs publik.
+
+## Verifikasi
+
+`node --test tests/*.test.mjs` — 17 pemeriksaan aturan game, kapasitas, jarak/kecepatan, reward, kolaborasi/pengkhianatan, kandang/patroli, gerak hewan, arah FPS, struktur GLB/material/animasi dan kejujuran status audio.
+
+Preview cloud mengalami relay timeout pada sesi pengembangan; gameplay FPS dan audio dalam browser belum terverifikasi. Render aset di Blender membantu pemeriksaan bentuk model, bukan pengganti uji browser.
