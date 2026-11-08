@@ -520,6 +520,20 @@
       "animations": []
     },
     {
+      "name": "vehicle-truck",
+      "file": "vehicle-truck.glb",
+      "bytes": 325520,
+      "description": "",
+      "animations": []
+    },
+    {
+      "name": "park-fountain",
+      "file": "park-fountain.glb",
+      "bytes": 57968,
+      "description": "",
+      "animations": []
+    },
+    {
       "name": "building-office",
       "file": "building-office.glb",
       "bytes": 145164,

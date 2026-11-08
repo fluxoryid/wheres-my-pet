@@ -13,7 +13,7 @@ Game Three.js berbahasa Indonesia, tanpa build step. Sajikan `dist/` melalui HTT
 
 ## Model GLB
 
-`dist/models/manifest.json` memuat 62 aset GLB standalone: 50 profil hewan, tiga manusia, sedan, gedung kantor, rumah, toko, bangku, bunga, lampu, air dan pohon.
+`dist/models/manifest.json` memuat 64 aset GLB standalone: 50 profil hewan, tiga manusia, sedan, truk satwa, air mancur, gedung kantor, rumah, toko, bangku, bunga, lampu, air dan pohon.
 
 Material PBR, geometri, tekstur yang tersedia dan animasi tersimpan dalam GLB. Runtime memakai GLTFLoader; instancing untuk bangunan/properti dan pembatasan jarak/jumlah untuk pohon dan warga. Manusia berjalan memakai animation clips GLB; hewan memiliki animasi sesuai anatomi.
 
